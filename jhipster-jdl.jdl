@@ -1,0 +1,49 @@
+
+entity Intent {
+	intent String,
+    intentName String,
+}
+
+entity Utterance {
+	utterance String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Entity {
+	entityName String,
+    start Integer,
+    end Integer
+}
+
+entity Transcripts{
+	utterance String,
+    intent String,
+    confidence String,
+    response String,
+    entityResponse String
+}
+
+
+
+
+relationship OneToMany {
+	Intent{utterances} to Utterance,
+    Utterance{entities} to Entity
+}
+
+// defining multiple oneToOne relationships
+
+
+// Set pagination options
+paginate JobHistory, Employee with infinite-scroll
+paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
