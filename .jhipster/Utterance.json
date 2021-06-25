@@ -1,0 +1,33 @@
+{
+  "name": "Utterance",
+  "fields": [
+    {
+      "fieldName": "utterance",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "nEREntity",
+      "otherEntityRelationshipName": "utterance",
+      "relationshipName": "entities"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "intent",
+      "otherEntityRelationshipName": "utterances",
+      "relationshipName": "intent"
+    }
+  ],
+  "entityTableName": "utterance",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210625033748"
+}

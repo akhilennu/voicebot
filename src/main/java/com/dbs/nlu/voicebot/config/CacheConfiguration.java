@@ -48,6 +48,12 @@ public class CacheConfiguration {
             createCache(cm, com.dbs.nlu.voicebot.domain.User.class.getName());
             createCache(cm, com.dbs.nlu.voicebot.domain.Authority.class.getName());
             createCache(cm, com.dbs.nlu.voicebot.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.dbs.nlu.voicebot.domain.Intent.class.getName());
+            createCache(cm, com.dbs.nlu.voicebot.domain.Intent.class.getName() + ".utterances");
+            createCache(cm, com.dbs.nlu.voicebot.domain.Utterance.class.getName());
+            createCache(cm, com.dbs.nlu.voicebot.domain.Utterance.class.getName() + ".entities");
+            createCache(cm, com.dbs.nlu.voicebot.domain.NEREntity.class.getName());
+            createCache(cm, com.dbs.nlu.voicebot.domain.Transcripts.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

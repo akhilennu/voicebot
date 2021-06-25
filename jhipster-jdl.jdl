@@ -10,7 +10,7 @@ entity Utterance {
 
 // an ignored comment
 /** not an ignored comment */
-entity Entity {
+entity NEREntity {
 	entityName String,
     start Integer,
     end Integer
@@ -20,7 +20,7 @@ entity Transcripts{
 	utterance String,
     intent String,
     confidence String,
-    response String,
+    gcResponse String,
     entityResponse String
 }
 
@@ -29,15 +29,13 @@ entity Transcripts{
 
 relationship OneToMany {
 	Intent{utterances} to Utterance,
-    Utterance{entities} to Entity
+    Utterance{entities} to NEREntity
 }
 
 // defining multiple oneToOne relationships
 
 
 // Set pagination options
-paginate JobHistory, Employee with infinite-scroll
-paginate Job with pagination
 
 // Use Data Transfer Objects (DTO)
 // dto * with mapstruct

@@ -43,6 +43,8 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "devServerPort": 9060
+    "devServerPort": 9060,
+    "entities": ["Intent", "Utterance", "NEREntity", "Transcripts"],
+    "lastLiquibaseTimestamp": 1624592270000
   }
 }

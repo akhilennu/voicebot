@@ -1,0 +1,36 @@
+{
+  "name": "NEREntity",
+  "fields": [
+    {
+      "fieldName": "entityName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "start",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "end",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "utterance",
+      "otherEntityRelationshipName": "entities",
+      "relationshipName": "utterance"
+    }
+  ],
+  "javadoc": "not an ignored comment",
+  "entityTableName": "ner_entity",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210625033749"
+}

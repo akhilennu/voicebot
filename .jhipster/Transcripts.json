@@ -1,0 +1,36 @@
+{
+  "name": "Transcripts",
+  "fields": [
+    {
+      "fieldName": "utterance",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "intent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "confidence",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gcResponse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entityResponse",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "transcripts",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210625033750"
+}

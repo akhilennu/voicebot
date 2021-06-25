@@ -1,0 +1,31 @@
+{
+  "name": "Intent",
+  "fields": [
+    {
+      "fieldName": "intent",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "intentName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "utterance",
+      "otherEntityRelationshipName": "intent",
+      "relationshipName": "utterances"
+    }
+  ],
+  "entityTableName": "intent",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210625033747"
+}
